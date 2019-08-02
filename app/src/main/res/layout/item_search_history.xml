@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyword_correct_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="35.0dip"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/keyword"
+        android:layout_width="fill_parent"
+        android:layout_height="34.5dip"
+        android:background="@color/filter_vertical_separating_line_color"
+        android:gravity="center|left"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:textColor="@color/search_hotword_hint"
+        android:textSize="@dimen/search_keyword_correct__text_size"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffd7d7d7" />
+</LinearLayout>

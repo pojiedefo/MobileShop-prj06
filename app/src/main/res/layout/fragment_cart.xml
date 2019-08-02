@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <!--头部布局-->
+    <LinearLayout
+        android:id="@+id/cart_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_cart_header"/>
+    </LinearLayout>
+    <!--底部布局-->
+    <LinearLayout
+        android:id="@+id/cart_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_cart_footer"/>
+    </LinearLayout>
+    <!--内容主体-购物车列表为空-->
+    <LinearLayout
+        android:id="@+id/cart_no_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cart_footer_layout"
+        android:layout_below="@id/cart_header_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/fragment_cart_nodata"/>
+    </LinearLayout>
+    <!--内容主体-购物车列表不为空-->
+    <LinearLayout
+        android:id="@+id/cart_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cart_footer_layout"
+        android:layout_below="@id/cart_header_layout"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <include layout="@layout/fragment_cart_list"/>
+    </LinearLayout>
+</RelativeLayout>

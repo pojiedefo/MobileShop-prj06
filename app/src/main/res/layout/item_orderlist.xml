@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/product_list_label_bg"
+    android:paddingBottom="12.0dip" android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+
+        <View
+            android:id="@+id/order_list_entity_item_divider_line_0"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffe1e1e1" />
+
+        <ImageView
+            android:id="@+id/order_item_finish_singet_iv"
+            android:layout_width="69.0dip"
+            android:layout_height="69.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/order_list_entity_item_divider_line_0"
+            android:layout_marginRight="17.0dip"
+            android:layout_marginTop="17.0dip"
+            android:src="@drawable/orderlist_finish_signet"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/order_list_entity_item_order_status_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:id="@+id/order_item_order_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:textColor="#fffe5f5f"
+                android:textSize="17.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/order_list_entity_item_orderNumber_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="50.0dip"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginRight="10.0dip"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/order_list_entity_item_order_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1.0dip"
+                    android:text="@string/order_bumber"
+                    android:textColor="#ff686868"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:id="@+id/order_item_order_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/order_list_entity_item_order_tv"
+                    android:textColor="#ff686868"
+                    android:textIsSelectable="true"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/order_list_entity_item_divider_line_1"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_below="@id/order_list_entity_item_order_status_rl"
+            android:background="#ffe1e1e1" />
+
+        <RelativeLayout
+            android:id="@+id/order_list_entity_item_order_product_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_list_entity_item_divider_line_1"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginTop="15.0dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/goods_container" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/order_list_entity_item_divider_line_3"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_below="@id/order_list_entity_item_order_product_rl"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="#ffe1e1e1" />
+
+        <RelativeLayout
+            android:id="@+id/order_list_entity_item_order_paymentInfo_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="62.0dip"
+            android:layout_below="@id/order_list_entity_item_divider_line_3"
+            android:paddingLeft="12.0dip">
+
+            <TextView
+                android:id="@+id/order_item_order_payment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15.0dip"
+                android:paddingRight="10.0dip"
+                android:textColor="#ff252525"
+                android:textSize="15.0sp"/>
+
+            <!--<Button-->
+            <!--android:id="@+id/order_list_entity_item_order_pay_btn"-->
+            <!--android:layout_width="83.0dip"-->
+            <!--android:layout_height="38.0dip"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10.0dip"-->
+            <!--android:layout_marginTop="15.0dip"-->
+            <!--android:background="@drawable/orderlist_entity_item_pay_btn_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fffe5f5f"-->
+            <!--android:textSize="15.0sp" android:text="再次购买"/>-->
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/order_list_entity_item_divider_line_4"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_below="@id/order_list_entity_item_order_paymentInfo_rl"
+            android:background="#ffe1e1e1" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button_c_01_solid" type="drawable">#ffffffff</item>
+    <item name="button_c_01_stroke" type="drawable">#ff686868</item>
+    <item name="button_c_02_solid" type="drawable">#ffd9d9d9</item>
+    <item name="button_c_02_stroke" type="drawable">#ff595959</item>
+
+    <item name="button_b_01_solid" type="drawable">#fff15353</item>
+    <item name="button_b_02_solid" type="drawable">#ffa83a3a</item>
+    <item name="button_b_03_solid" type="drawable">#fff0f0f0</item>
+    <item name="button_b_04_solid" type="drawable">#ffe1e1e3</item>
+
+    <item name="none" type="drawable">#00000000</item>
+    <item name="pd_content" type="drawable">#fff3f5f7</item>
+    <item name="pd_deliver_h" type="drawable">#ffd7d7d7</item>
+    <item name="pd_shadow_bottom" type="drawable">#d9000000</item>
+
+    <item type="drawable" name="button_d_01_stroke">#ffb7b7b7</item>
+    <item type="drawable" name="button_d_01_solid">#ffffffff</item>
+</resources>

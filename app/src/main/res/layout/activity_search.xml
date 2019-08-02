@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_f3f5f7">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            layout="@layout/common_header2"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/product_list_search_float_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/header"
+        android:background="@color/search_hotword_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="34.0dip"
+            android:background="@color/search_hotword_bg"
+            android:gravity="center|left"
+            android:text="历史搜索"
+            android:textColor="@color/search_hotword_hint"
+            android:textSize="16.0sp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/search_hotword_divider"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_history_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:focusableInTouchMode="false"
+            android:listSelector="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/del_history_button"
+            android:layout_width="fill_parent"
+            android:layout_height="42.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginRight="35.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/button_c"
+            android:gravity="center"
+            android:text="@string/del_search_history"
+            android:textColor="@color/del_search_history_textcolor"
+            android:textSize="15.0sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

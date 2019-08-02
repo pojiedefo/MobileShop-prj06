@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="49.0dip"
+    android:background="@drawable/common_title_background"
+    android:fadingEdge="none">
+
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="5.0dip"
+        android:src="@drawable/common_title_back_selector"/>
+
+    <TextView
+        style="@style/common_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10.0dip"
+        android:text="购物车"/>
+
+    <LinearLayout
+        android:id="@+id/shopping_cart_delete_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/shopping_cart_edit_devider"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="#ffc93641"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/shopping_cart_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="8.0dip"
+            android:text="编辑"
+            android:textSize="15.0sp"/>
+    </LinearLayout>
+</FrameLayout>

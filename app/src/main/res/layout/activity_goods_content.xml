@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goods_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/product_detail_bottom_layout"
+    android:layout_below="@+id/common_title"
+    android:background="#fff8f8f8"
+    android:fadeScrollbars="true"
+    android:focusable="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <!--图片区域-->
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="320.0dip"
+            android:background="#ffffffff"
+            android:visibility="visible">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/image_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation"
+                android:visibility="visible"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:flipInterval="30"
+                android:src="@drawable/linshi_shouchuan"
+                android:visibility="gone"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/image_pager_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="@drawable/pd_image_count_bg"
+                android:gravity="center"
+                android:minHeight="36.0dip"
+                android:minWidth="36.0dip"
+                android:text="1/1"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"/>
+        </RelativeLayout>
+        <!--标题-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pd_content"
+            android:orientation="vertical"
+            android:padding="@dimen/goods_details_content_padding">
+            <!--商品名称-->
+            <LinearLayout
+                android:id="@+id/goods_name_layout"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="慈灵阁大金刚菩提子手串佛珠手链五瓣红皮木饰手珠牛角三通男款20MM"
+                    android:textColor="@color/pd_black_25"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:background="@drawable/pd_arrow_r"/>
+            </LinearLayout>
+            <!--商品价格-->
+            <TextView
+                android:id="@+id/goods_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="none"
+                android:lines="1"
+                android:text="¥119.00"
+                android:textColor="@color/pd_red"
+                android:textSize="19.0sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/pd_deliver_h"/>
+        <!--商品品牌-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pd_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/goods_details_content_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.0dip"
+                android:text="品牌"
+                android:textColor="@color/pd_gray"
+                android:textSize="14.0sp"/>
+
+            <TextView
+                android:id="@+id/goods_brand"
+                android:layout_width="0dp"
+                android:text=" 慈灵阁"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/pd_black_25"
+                android:textSize="14.0sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/pd_deliver_h"/>
+        <!--库存-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pd_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/goods_details_content_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.0dip"
+                android:text="库存"
+                android:textColor="@color/pd_gray"
+                android:textSize="14.0sp"/>
+
+            <TextView
+                android:id="@+id/goods_store"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100"
+                android:textColor="@color/pd_black_25"
+                android:textSize="14.0sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/pd_deliver_h"/>
+        <!--浏览次数-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pd_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/goods_details_content_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.0dip"
+                android:text="浏览次数"
+                android:textColor="@color/pd_gray"
+                android:textSize="14.0sp"/>
+
+            <TextView
+                android:id="@+id/goods_view_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="320123"
+                android:textColor="@color/pd_black_25"
+                android:textSize="14.0sp"/>
+        </LinearLayout>
+        <!--数量-->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/pd_deliver_h"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pd_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/goods_details_content_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.0dip"
+                android:text="数量"
+                android:textColor="@color/pd_gray"
+                android:textSize="14.0sp"/>
+
+            <TextView
+                android:id="@+id/goods_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="@color/pd_black_25"
+                android:textSize="14.0sp"/>
+
+            <ImageView
+                android:id="@+id/choose_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/pd_arrow_r"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

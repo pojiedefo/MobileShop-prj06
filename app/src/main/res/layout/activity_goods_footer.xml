@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--底部标签栏-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@drawable/pd_shadow_bottom"
+    android:orientation="horizontal">
+    <!--收藏-->
+    <LinearLayout
+        android:id="@+id/favorite_layout"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:src="@drawable/pd_collect"/>
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:text="@string/favorite"
+            android:textColor="#b2ffffff"
+            android:textSize="10.0sp"/>
+    </LinearLayout>
+    <!--购物车-->
+    <LinearLayout
+        android:id="@+id/cat_layout"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:src="@drawable/pd_car"/>
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:text="@string/cart"
+            android:textColor="#b2ffffff"
+            android:textSize="10.0sp"/>
+    </LinearLayout>
+    <!--添加购物车-->
+    <TextView
+        android:id="@+id/add_to_cart"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/pd_add2car_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/add_to_cart"
+        android:textColor="@color/white"
+        android:textSize="19.0sp"
+        android:visibility="visible"/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/common_title_2"
+            layout="@layout/common_header"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/left_list"
+            android:layout_width="@dimen/category_list_left_width"
+            android:layout_height="fill_parent"
+            android:background="@color/category_left_bg_color"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:divider="@null"
+            android:scrollbars="none"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/right_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:divider="@null"
+            android:focusable="false"
+            android:paddingLeft="@dimen/category_list_right_padding"
+            android:paddingRight="@dimen/category_list_right_padding"
+            android:paddingTop="@dimen/category_list_right_padding"
+            android:scrollbars="none"/>
+    </LinearLayout>
+</LinearLayout>

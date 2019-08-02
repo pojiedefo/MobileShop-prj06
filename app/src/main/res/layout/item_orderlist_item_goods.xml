@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10.0dip">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="56.0dip"
+        android:layout_height="56.0dip"
+        android:layout_marginRight="@dimen/fill_order_commitlist_margin"
+        android:background="@drawable/commitlist_product_icon_bg"
+        android:scaleType="fitCenter"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/product_image"
+        android:layout_toLeftOf="@+id/product_price"
+        android:layout_toRightOf="@id/product_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/fill_order_delivery_normal"
+        android:textSize="15.0sp"/>
+
+    <TextView
+        android:id="@+id/product_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6.0dip"
+        android:layout_toRightOf="@id/product_image"
+        android:textColor="@color/fill_order_delivery_normal"
+        android:textSize="15.0sp"/>
+
+    <TextView
+        android:id="@+id/product_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@id/product_num"
+        android:textColor="@color/fill_order_delivery_normal"
+        android:textSize="15.0sp"/>
+
+    <!--只有价格-->
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/fill_order_delivery_button_red_color"
+        android:textSize="14.0sp"/>
+</RelativeLayout>

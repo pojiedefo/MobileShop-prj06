@@ -1,0 +1,45 @@
+<resources>
+
+    <!--App主题-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="tab_item_linear_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tab_item_image_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#0000</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="common_layout_title">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/common_title_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="line2">
+        <item name="android:background">#ffcccccc</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="my_personal_list_height">
+        <item name="android:layout_height">49.0dip</item>
+    </style>
+    <style name="title_right_button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/plug_center_promotion_right_button_background_selector</item>
+        <item name="android:layout_width">80.0dip</item>
+    </style>
+</resources>

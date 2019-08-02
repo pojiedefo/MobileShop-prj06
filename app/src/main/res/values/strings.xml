@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MobileShop</string>
+    <string name="title_activity_apitest">APITestActivity</string>
+    <string name="mobileshop">MobileShop</string>
+    <string name="order_bumber">订单编号：</string>
+    <string name="nodata">抱歉，没有符合条件的商品</string>
+    <string name="sales">销量</string>
+    <string name="grade">评价</string>
+    <string name="price">价格</string>
+    <string name="newgoods">新品</string>
+    <string name="homeActivity_autoComplete">搜索商品</string>
+    <string name="search">搜索</string>
+    <string name="del_search_history">清空历史搜索</string>
+
+    <string name="goods_detail">商品详情</string>
+    <string name="favorite">收藏</string>
+    <string name="cart">购物车</string>
+    <string name="add_to_cart">加入购物车</string>
+    <string name="favo_no_data">您还没有收藏过任何商品！何不去逛逛~</string>
+</resources>

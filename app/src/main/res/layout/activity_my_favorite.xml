@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <FrameLayout
+        android:id="@+id/common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:background="@drawable/common_title_background"
+        android:fadingEdge="none">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/common_title_back_selector"/>
+
+        <TextView
+            style="@style/common_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="我的收藏"/>
+    </FrameLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/jshop_line_color"/>
+    <!--收藏列表不为空时显示的布局-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/none"
+        android:minHeight="?android:listPreferredItemHeight"
+        android:visibility="visible"/>
+    <!--收藏列表为空时显示的布局-->
+    <LinearLayout
+        android:id="@+id/favorite_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/favo_empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_horizontal"
+            android:text="@string/favo_no_data"
+            android:textAppearance="@android:style/TextAppearance"
+            android:textColor="@color/jshop_product_stock_color"
+            android:textSize="18.0sp"/>
+
+        <Button
+            android:id="@+id/favorite_index_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/button_d_01"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:paddingTop="10.0dip"
+            android:text="去首页看看"
+            android:textAppearance="@android:style/TextAppearance"
+            android:textColor="@color/jshop_notify_text_color"
+            android:textSize="15.0sp"/>
+    </LinearLayout>
+</LinearLayout>

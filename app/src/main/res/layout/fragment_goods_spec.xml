@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/resize_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="240.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/l_layout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10.0dip">
+
+            <ImageView
+                android:id="@+id/goods_image"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/txt_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="1.0dip"
+                    android:drawableLeft="@drawable/pd_style_phone"
+                    android:drawablePadding="12.0dip"
+                    android:text="手机专享价"
+                    android:textColor="@color/pd_black_25"
+                    android:textSize="14.0sp"/>
+
+                <TextView
+                    android:id="@id/goods_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:drawablePadding="5.0dip"
+                    android:singleLine="true"
+                    android:text="￥99.08"
+                    android:textColor="@color/pd_red"
+                    android:textSize="16.0sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/pd_deliver_h"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <!---->
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/pd_content">
+
+                <LinearLayout
+                    android:id="@+id/goods_spec_list_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/l_layout_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15.0dip"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingTop="25.0dip">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="3.0dip"
+                            android:text="数量"
+                            android:textColor="@color/pd_gray"
+                            android:textSize="14.0sp"/>
+
+                        <LinearLayout
+                            android:id="@id/l_layout_1"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_weight="1.0"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/btn_release"
+                                android:layout_width="36.0dip"
+                                android:layout_height="27.0dip"
+                                android:background="@drawable/pd_style_l_bg"
+                                android:src="@drawable/pd_style_release"/>
+
+                            <EditText
+                                android:id="@+id/goods_count"
+                                android:layout_width="36.0dip"
+                                android:layout_height="27.0dip"
+                                android:background="@drawable/pd_style_m_bg"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:text="1"
+                                android:textColor="@color/pd_black_25"
+                                android:textSize="14.0sp"/>
+
+                            <ImageButton
+                                android:id="@+id/btn_add"
+                                android:layout_width="36.0dip"
+                                android:layout_height="27.0dip"
+                                android:background="@drawable/pd_style_r_bg"
+                                android:src="@drawable/pd_style_add"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/pd_padding_at_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/l_layout_3"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/add_to_cart"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/pd_add2car_bg"
+                        android:gravity="center"
+                        android:text="@string/add_to_cart"
+                        android:textColor="@color/white"
+                        android:textSize="19.0sp"
+                        android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/new_easy_buy_address_background_color">
+
+    <FrameLayout
+        android:id="@+id/new_easy_buy_address_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:background="@drawable/common_title_background"
+        android:fadingEdge="none">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/common_title_back_selector"/>
+
+        <TextView
+            style="@style/common_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="收货地址"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_address_no_data"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/new_easy_buy_address_list_title"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_address"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:gravity="center"
+            android:text="您还没有收货地址哦!"
+            android:textColor="@color/black"
+            android:textSize="20.0sp"/>
+
+        <Button
+            android:id="@+id/button_address_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23.0dip"
+            android:background="@drawable/app_limit_buy_buttom_selector"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="5.0dip"
+            android:text="新建地址"
+            android:textColor="@color/pd_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_address_create"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="20.0dip"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/button_address_create"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/button_b"
+            android:padding="10.0dip"
+            android:text="+ 新建地址"
+            android:textColor="@drawable/button_b_font_color"
+            android:textSize="17.0sp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/address_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_address_create"
+        android:layout_below="@id/new_easy_buy_address_list_title"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@drawable/none"
+        android:visibility="visible"/>
+</RelativeLayout>
